@@ -1,0 +1,20 @@
+.contactheader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    padding: 25px 100px ;
+    margin-top: 5px;
+}
+.contactheader h1{
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+.contactheader p{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

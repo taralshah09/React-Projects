@@ -1,0 +1,35 @@
+.header{
+    width: 100%;
+    user-select: none;
+}
+.header .nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    height: 72px;
+    overflow: hidden;
+}
+.header .nav #logo{
+    width: 80px;
+}
+.header .nav .ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.header .nav .ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 7px 20px;
+    /* background: #000; */
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.header .nav .ul li a:hover{
+    background: #000;
+    color: white;
+}
