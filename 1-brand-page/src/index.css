@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-y: none;
+}
+
+header {
+  width: 100%;
+  padding: 15px 25px;
+  /* box-shadow: 0 1px 15px rgba(0,0,0.1); */
+}
+header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav img {
+  width: 100px;
+}
+
+header nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+}
+header nav .nav-links li a {
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+header nav .nav-links li a:hover {
+  color: white;
+  background: red;
+}
+header nav .sidebar{
+  display: none;
+} 
+#menu-icon{
+  display: none;
+}
+
+header nav #nav-btn {
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 25px;
+  background: red;
+}
+
+#hero-section {
+  width: 100%;
+  padding: 50px 75px 10px 75px;
+  display: flex;
+  /* background: black; */
+}
+#hero-section .col {
+  display: flex;
+  flex-direction: column;
+}
+#hero-section .col:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+  /* background: red; */
+  gap: 15px;
+}
+#hero-section .col h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 90px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  line-height: 90px;
+  word-spacing: 10px;
+}
+#hero-section .col p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6f6d6d;
+}
+
+#hero-section .col .btn-box{
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  gap: 15px;
+}
+#hero-section .col .btn-box button{
+  padding: 10px 15px;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  background: none;
+}
+#hero-section .col .btn-box #shop-now{
+  background: red;
+  border: none;
+  color: white;
+}
+#hero-section .col .avail-box{
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  gap: 5px;
+}
+#hero-section .col .avail-box p{
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  color: #6f6d6d;
+}
+#hero-section .col .avail-box .row{
+  display: flex;
+ gap: 15px;
+}
+#hero-section .col .avail-box .row img{
+  width: 30px;
+}
+
+@media (max-width:750px) {
+
+  header nav{
+    position: relative;
+  }
+  header nav .nav-links{
+    display: none;
+  }
+  header nav .sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    transition: 0.3s;
+  }
+  header nav .sidebar .open{
+   right: 0;
+  }
+  #hero-section{
+    flex-direction: column;
+  } 
+  #menu-icon{
+    display: block;
+  }
+
+  #close-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
