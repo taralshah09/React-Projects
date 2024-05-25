@@ -37,7 +37,7 @@ const Gameplay = () => {
     }
     const randomNumber = generateRandomNumber();
     setCurrentDice(randomNumber);
-    // console.log("Current Dice : "+ currentDice)
+    console.log("Current Dice : "+ currentDice)
     if(randomNumber === selectedNumber){
       setScore(prev=>prev+selectedNumber);
     }

@@ -64,6 +64,7 @@ const Box = styled.div`
   transition: 0.3s;
   background: ${(props) => (props.isselected ? "black" : "white")};
   color: ${(props) => (props.isselected ? "white" : "black")};
+  
    &:hover {
     background-color: #e9c3fe;
     cursor: pointer;
