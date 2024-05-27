@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #0f1b21;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 45px 35px;
+}
+
+.tictactoe-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.tictactoe-container h2 {
+  color: white;
+  font-size: 55px;
+}
+.tictactoe-container h2 span {
+  color: rgb(28, 189, 141);
+  font-size: 55px;
+}
+
+/* Board Designing */
+.tictactoe-container .board {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  width: 460px;
+    align-items: center;
+  position: relative;
+}
+.tictactoe-container .row1,
+.tictactoe-container .row2,
+.tictactoe-container .row3 {
+  display: flex;
+  gap: 15px;
+}
+.tictactoe-container .board .box {
+  width: 130px;
+  height: 130px;
+  background: #1d282e;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tictactoe-container .reset {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  color: rgb(28, 189, 141);
+  background: #1d282e;
+  border: 0;
+  outline: 0;
+  transition: 0.2s;
+}
+.tictactoe-container .reset:hover {
+  cursor: pointer;
+  background: rgb(28, 189, 141);
+  color: #1d282e;
+}
+
+.title .winner-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
