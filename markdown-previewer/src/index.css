@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reddit Mono",sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: rgb(86, 165, 255);
+}
+
+.input{
+  padding: 25px;
+  flex-basis: 50%;
+  height: 100%;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.input textarea{
+  resize: none;
+  width: 95%;
+  height: 90%;
+  padding: 15px;
+  border: 1px solid;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.8);
+  outline: 0;
+}
+.output{
+  padding: 25px;
+  flex-basis: 50%;
+  height: 100%;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.output .output-box{
+  width: 95%;
+  height: 90%;
+  padding: 15px;
+  border: 1px solid;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.8);
+  background: white;
+  overflow-y: auto;
+}
+
+
+p{
+  font-size: 1rem;
+}
+
+blockquote{
+  background: gray;
+}
+
+code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+ pre {
+  display: block;
+  overflow: auto;
+  background: rgb(237, 82, 82);
+  padding: 5px;
+  line-height: 1.2;
+  border: 2px solid black;
+}
+comment{
+  color: green;
+}
+ h1 {
+  border-bottom: 2px solid #224b4b;
+}
+ h2 {
+  border-bottom: 1px solid #224b4b;
+}
+ table {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+ td,
+ th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+ul{
+  margin-left: 25px;
+}
+ol{
+  margin-left: 25px;
+}
