@@ -1,0 +1,61 @@
+API_KEY : "be328ddd8eb8c931ef2af05b8c956853"
+API_URL : https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid=be328ddd8eb8c931ef2af05b8c956853&units=metric
+
+        if(data.weather[0].main == "Clear"){
+            weatherImg.src = "images/clear.png"
+        }
+        if(data.weather[0].main == "Mist"){
+            weatherImg.src = "images/mist.png"
+        }
+        if(data.weather[0].main == "Clouds"){
+            weatherImg.src = "images/clouds.png"
+        }
+        if(data.weather[0].main == "Drizzle"){
+            weatherImg.src = "images/drizzle.png"
+        }
+        if(data.weather[0].main == "Rain"){
+            weatherImg.src = "images/rain.png"
+        }
+        if(data.weather[0].main == "Snow"){
+            weatherImg.src = "images/snow.png"
+        }
+
+
+
+        /* Rough data from the jsx file
+         const [place, setPlace] = useState("");
+  const [weatherInfo,setWeatherInfo] = useState({})
+  
+  const searchWeather = async() => {
+    if(place){
+          fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=be328ddd8eb8c931ef2af05b8c956853&units=metric`)
+          .then(res => res.json())
+          .then(data=>setWeatherInfo({
+            temp : Math.round(data.main.temp),
+            city : data.name,
+            humidity : data.humidity,  
+          }))
+      }
+    else{
+      return "Error";
+    }
+  }
+
+  useEffect(()=>{
+    searchWeather();
+    console.log(weatherInfo)
+  },[])
+    // useEffect(()=>{
+    //   if(place){
+    //     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=be328ddd8eb8c931ef2af05b8c956853&units=metric`)
+    //     .then(res => res.json())
+    //     .then(data=>setWeatherInfo(data))
+    //   }
+    // },[place])
+
+    const handleSubmit = (e) =>{
+      e.preventDefault();
+      setPlace("");
+    }
+
+        */
