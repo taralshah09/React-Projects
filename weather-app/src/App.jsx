@@ -51,7 +51,7 @@ function App() {
     } catch (error) {
       alert("Incorrect city!");
       console.log("ERROR in the input!");
-    }
+    }kk
   };
 
   return (

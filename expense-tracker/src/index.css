@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background: #333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 400px;
+  border-radius: 5px;
+  padding: 15px;
+  max-height: 92vh;
+  background: rgb(222, 219, 219);
+  position: relative;
+  padding: 5px;
+}
+.container .title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.balance-box {
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #fefcfc;
+  /* border: 1px solid; */
+  padding: 10px;
+  border-radius: 5px;
+  flex-basis: 15%;
+  /* background: red; */
+}
+
+.balance-box h3 {
+  font-size: 16px;
+  position: relative;
+}
+.balance-box h3::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.balance-box h2 {
+  font-size: 20px;
+}
+.balance-box .balance-container {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+}
+#income {
+  color: green;
+  font-weight: 600;
+  font-size: 20px;
+}
+#expense {
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+}
+
+.balance-container .col:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #d4d4d4;
+  width: 2px;
+  height: 100%;
+}
+
+.balance-box .balance-container .col {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.history-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  
+}
+.history-box h2 {
+  font-size: 16px;
+}
+.history-box hr {
+  height: 2.5px;
+  background: #333;
+}
+/* .history-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+
+} */
+
+.history-container {
+  max-height: 300px;
+  padding-right: 10px;
+}
+
+.history-container::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.history-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.history-container .element{
+  width: 100%;
+  display: grid;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 10px;
+  grid-template-columns: 8fr 2fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background: white;
+  font-weight: 500;
+}
+/* .history-container .element::after{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  right: 0px;
+  background: green;
+} */
+
+.history-container h2{
+  font-weight: 500;
+  
+}
+
+.history-container .element button{
+  right: -10px;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.new-transaction-box{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+.new-transaction-box h2{
+  font-size: 16px;
+}
+
+.new-transaction-box .input-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.new-transaction-box .input-box p{
+  font-size: 15px;
+  font-weight: 500;
+}
+.new-transaction-box .input-box input{
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+.new-transaction-box .amount{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.new-transaction-box .amount p{
+ font-size: 15px;
+ font-weight: 500;
+ line-height: 15px;
+}
+.new-transaction-box .amount span{
+ font-size: 13px;
+ font-weight: 400;
+  margin-bottom: 5px;
+}
+.new-transaction-box .amount input{
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+.new-transaction-box button{
+  background: blueviolet;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.new-transaction-box button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
