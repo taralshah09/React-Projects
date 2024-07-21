@@ -86,7 +86,7 @@ main{
   display: grid;
   grid-template-columns: 1fr 8fr 1fr 1fr;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   /* background: brown; */
   font-size: 18px;
   margin-bottom: 15px;
@@ -95,6 +95,7 @@ main{
   transition: 0.3s;
   font-weight: 500;
   border: 1px solid;
+  word-break: keep-all;
 }
 .task:hover{
   background: rgb(200, 255, 205);
@@ -168,4 +169,44 @@ main{
  border: 0;
  outline: 0;
  cursor: pointer;
+}
+
+@media (max-width:750px) {
+
+  #edit-screen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    box-shadow: 25px 25px 100px black;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px; */
+  }
+
+  .container{
+    border-radius: 8px;
+    width: 90vw;
+    height: 90%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /* align-items: flex-start;
+    justify-content: space-between; */
+  }
+  .title{
+    font-size: 20px;
+  }
+  .task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    min-height: 50px;
+    font-size: 10px;
+  }
 }
