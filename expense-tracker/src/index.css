@@ -148,7 +148,7 @@ main {
   border: 1px solid;
   border-radius: 5px;
   margin-top: 10px;
-  grid-template-columns: 8fr 2fr 1fr;
+  grid-template-columns: 8fr 2fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
   position: relative;

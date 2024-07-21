@@ -6,7 +6,8 @@ import AddNewTransaction from './components/AddNewTransaction';
 
 export const ACTIONS = {
   ADD_TRANSACTION: "add-transaction",
-  DELETE: "delete-transaction"
+  DELETE: "delete-transaction",
+  EDIT_TRANSACTION: "edit-transaction" // New action type
 };
 
 function reducer(transactions, action) {
@@ -15,6 +16,12 @@ function reducer(transactions, action) {
       return [...transactions, NewTransaction(action.payload.text, action.payload.amount)];
     case ACTIONS.DELETE:
       return transactions.filter(elem => elem.id !== action.payload.id);
+    case ACTIONS.EDIT_TRANSACTION:
+      return transactions.map(transaction =>
+        transaction.id === action.payload.id
+          ? { ...transaction, text: action.payload.text, amount: parseFloat(action.payload.amount) }
+          : transaction
+      );
     default:
       return transactions;
   }
