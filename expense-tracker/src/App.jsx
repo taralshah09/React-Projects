@@ -19,7 +19,7 @@ function reducer(transactions, action) {
     case ACTIONS.EDIT_TRANSACTION:
       return transactions.map(transaction =>
         transaction.id === action.payload.id
-          ? { ...transaction, text: action.payload.text, amount: parseFloat(action.payload.amount) }
+          ? { ...transaction, text: action.payload.text, amount: Number(action.payload.amount) }
           : transaction
       );
     default:
